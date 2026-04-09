@@ -9,7 +9,7 @@ It stores World Cup match data and allows SQL queries to analyze teams, matches,
 ## 📁 Project Files
 
 * `games.csv` – Raw match data
-* `worldcup_database.sql` – Database schema and data dump
+* `worldcup.sql` – Database schema and data dump
 * `insert_data.sh` – Bash script to import CSV data into PostgreSQL
 * `queries.sh` – SQL queries for analysis
 * `expected_output.txt` – Expected results for validation
@@ -27,7 +27,7 @@ psql -U postgres -c "CREATE DATABASE worldcup;"
 ### 2. Import database
 
 ```bash id="db2"
-psql -U postgres -d worldcup -f worldcup_database.sql
+psql -U postgres -d worldcup -f worldcup.sql
 ```
 
 ### 3. Insert data using script
